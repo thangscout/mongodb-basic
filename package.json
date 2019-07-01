@@ -1,0 +1,25 @@
+{
+  "name": "mongodb-basic",
+  "version": "1.0.0",
+  "description": "Lesson about mongodb and mongoose basic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thangscout/mongodb-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thangscout/mongodb-basic/issues"
+  },
+  "homepage": "https://github.com/thangscout/mongodb-basic#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.2"
+  }
+}
