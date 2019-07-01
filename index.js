@@ -7,6 +7,8 @@ const bodyParser = require('body-parser');
 const uri = 'mongodb://localhost/mongodb-basic';
 
 const POST_ROUTER = require('./routers/post.router');
+const {CATEGORY_ROUTER} = require('./routers/category.router');
+const {PRODUCT_ROUTER} = require('./routers/product.router');
 
 app.set('views', './views');
 app.set('view engine', 'ejs');
@@ -16,6 +18,8 @@ app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 
 app.use('/post', POST_ROUTER);
+app.use('/category', CATEGORY_ROUTER);
+app.use('/product', PRODUCT_ROUTER);
 
 app.get('/', async (req, res)=>{
     try {
